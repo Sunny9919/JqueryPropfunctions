@@ -1,0 +1,34 @@
+<script>
+    // Example 1: Disable and enable a button
+    $("#disableButton").click(function () {
+        $("#disableButton").prop("disabled", true);
+    });
+
+    $("#enableButton").click(function () {
+        $("#disableButton").prop("disabled", false);
+    });
+
+    // Example 2: Check and uncheck a checkbox
+    $("#checkCheckbox").click(function () {
+        $("#myCheckbox").prop("checked", true);
+    });
+
+    $("#uncheckCheckbox").click(function () {
+        $("#myCheckbox").prop("checked", false);
+    });
+
+    // Example 3: Make input writable
+    $("#makeInputWritable").click(function () {
+        $("#myInput").prop("readonly", false);
+    });
+
+    // Example 4: Get and set custom data attribute
+    $("#getDataAttribute").click(function () {
+        var customDataValue = $("#myElement").prop("data-custom");
+        alert("Data Attribute Value: " + customDataValue);
+    });
+
+    $("#setDataAttribute").click(function () {
+        $("#myElement").prop("data-custom", "new-custom-data");
+    });
+</script>
